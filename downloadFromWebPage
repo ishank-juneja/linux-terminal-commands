@@ -1,0 +1,2 @@
+ wget -A pdf ppt pptx -m -p -E -k -K -np https://www.cse.iitb.ac.in/~ranade/cs213/
+

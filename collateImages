@@ -1,0 +1,4 @@
+#Horizontaly
+convert +append *.png out.png 
+#vertically
+convert -append *.png out.png
