@@ -2,9 +2,11 @@
 
 ### Append together images
 - Horizontaly
+
 `convert +append *.png out.png`
 
 - Vertically 
+
 `convert -append *.png out.png`
 
 - Compress all images in current working directory
@@ -15,5 +17,5 @@ for photos in *.jpg;
 done
 ```
 - Convert between compressed image file formats 
-`convert foo.jpg bar.png`
 	- Or vice-versa
+`convert foo.jpg bar.png`
