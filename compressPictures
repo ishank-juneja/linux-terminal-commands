@@ -1,4 +1,0 @@
-mkdir photos-Optimized;
-for photos in *.jpg;
-	do convert -verbose $photos -quality 85% -resize 1600x900 ./photos-Optimized/$photos-Optimized.jpg; 
-done 

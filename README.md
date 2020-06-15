@@ -1,4 +1,4 @@
-# Useful terminal commands
+# Useful Terminal Commands
 A repository for some useful linux terminal commands. Scraped together over years of google searches
 - git terminal commands
 - template bash scripts
