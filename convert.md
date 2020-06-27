@@ -1,4 +1,5 @@
 # The Convert Command on Linux
+Docs - [Linux Convert Tool](https://linux.die.net/man/1/convert)
 
 ### Append together images
 - Horizontaly
@@ -17,8 +18,11 @@ for photos in *.jpg;
 done
 ```
 ### Convert between compressed image file formats 
-	- Or vice-versa
+- Or vice-versa
+
 `convert foo.jpg bar.png`
+
+- Does not work with `.svg` vector graphics
 
 ### Change the size of an image
 - Fixed aspect ratio

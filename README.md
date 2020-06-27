@@ -5,4 +5,4 @@ A repository for some useful linux terminal commands. Scraped together over year
 - Usage of inbuilt software tutorials (ex. `wget`, `ssh` etc)
 - Zip/unzip using tarball
 - ssh/scp
-- `convert` command for images file formats `.jpg`, `.png`, `.gif`
+- `convert` command for images file formats `.jpg`, `.png`, `.gif` but not `.svg`
