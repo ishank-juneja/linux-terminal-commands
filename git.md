@@ -1,31 +1,31 @@
-- Save GH password
+Save GH password
 	- Which needs to be followed by one final entry of GH credentials.
 
 `git config credential.helper store`
 	
-- To remove git tracking and all git history from a local repository
+To remove git tracking and all git history from a local repository
 
 `rm -rf .git` 
 
-- To discard unstaged changes 
+To discard un staged changes 
 
 `git checkout --`
 
-- To remove from staging
+To remove from staging
 
 `git reset`
 
-- To create a git hub repo from existing git folder 
+To create a git hub repo from existing git folder 
 
 `git remote add github https://github.com/ishank-juneja/Digital-Design.git`
 
 `git push -u github master`
 
-- To view files that have extension included in .gitignore but were already commited earlier
+To view files that have extension included in .gitignore but were already commited earlier
 
 `git ls-files -ci --exclude-standard`
 
-- To remove files listed above from git but keep on disk
+To remove files listed above from git but keep on disk
 
 `git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached`
 
@@ -40,45 +40,53 @@ The removal of the file from the head revision will happen on the next commit.
 
 >WARNING: While this will not remove the physical file from your local, it will remove the files from other developers machines on next git pull
 
-- to get current branch and list of all branches
+To get current branch and list of all branches
 `git branch`
 
-- to remove association with remote repo origin
+To remove association with remote repo origin
 
 `git remote rm origin`
 
-- To override any excludes from .gitignore file, for instance track only exception.dll among all files with .dll extension
+To sever ties with existing remote and establish them with a new remote. First, 
+
+`git remote set-url origin new-url`
+
+Then, pull from new remote with the allow different histories tag
+
+`git pull --allow-unrelated-histories`
+
+To override any excludes from .gitignore file, for instance track only exception.dll among all files with .dll extension
 ```
 *.dll
 ?!exception.dll
 ```
 
-- To get complete ifnormation about all the branches on remote origin
+To get complete information about all the branches on remote origin
 	- What pushes where, what all is tracked etc...
 
 `git remote show origin`
 
-- To prune local useless references
+To prune local useless references
 
 `git prune`
 
-- To do the above for refs originating from remote
+To do the above for refs originating from remote
 
 `git remote prune <origin/remote dir name>`
 
-- To rename a branch both locally and on the remote see link
-	- Note you CANNOT rename the default branch on GH
+To rename a branch both locally and on the remote see link
 
+	- Note you CANNOT rename the default branch on GH
 	- [Answer on SO](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
 
-- To see all remote branches
+To see all remote branches
 
 `git branch -r`
 
-- To fetch a new remote branch into a new local branch of the same name 
+To fetch a new remote branch into a new local branch of the same name 
 
 `git checkout --track origin/<name at remote>`
 
-- To create a new local git rep that tracks a remote repo on GH say
+To create a new local git rep that tracks a remote repo on GH say
 
 `git clone https://github.com/ishank-juneja/pipelined-RISC`

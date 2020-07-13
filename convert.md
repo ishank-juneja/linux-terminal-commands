@@ -1,4 +1,5 @@
 # The Convert Command on Linux
+The command is part of te ImageMagick Toolkit<br>
 Docs - [Linux Convert Tool](https://linux.die.net/man/1/convert)
 
 ### Append together images
@@ -22,7 +23,9 @@ done
 
 `convert foo.jpg bar.png`
 
-- Does not work with `.svg` vector graphics
+- Special treatment required for converting from `.svg` format
+
+
 
 ### Change the size of an image
 - Fixed aspect ratio
