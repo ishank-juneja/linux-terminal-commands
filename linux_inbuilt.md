@@ -11,3 +11,6 @@ cmd to download files of a certain type from a website by traversing all links r
 
 `wget -A pdf ppt pptx -m -p -E -k -K -np https://www.cse.iitb.ac.in/~ranade/cs213/`
 
+cmd to count the total number of files in a directory
+
+`ls -l . | egrep -c '^-'`
