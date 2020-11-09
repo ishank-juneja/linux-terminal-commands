@@ -103,4 +103,4 @@ In a `.gitignore` file if we wish to exclude all files of type `.png` and `.jpg`
 !media/*.png
 !media/*.jpg
 ```
-
+The sequence of commands in the above is important
