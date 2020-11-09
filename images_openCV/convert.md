@@ -38,3 +38,13 @@ done
 `convert i-1_reg_plot.png -resize x600 out.png`
 
 `convert i-1_reg_plot.png -resize 600x out.png`
+
+
+### Convert PDF to compressed image formats like png, jpg
+- For the full document:
+`convert -density 150 input.pdf -quality 90 output.png`
+
+- For a single page:
+`convert -density 150 input.pdf[666] -quality 90 output.png`
+
+
