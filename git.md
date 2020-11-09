@@ -90,3 +90,17 @@ To fetch a new remote branch into a new local branch of the same name
 To create a new local git rep that tracks a remote repo on GH say
 
 `git clone https://github.com/ishank-juneja/pipelined-RISC`
+
+In a `.gitignore` file if we wish to exclude all files of type `.png` and `.jpg` except for those sitting inside a certain `media` folder
+```
+# Image files
+*.svg
+*png
+*.jpg
+*.JPG
+
+# Not images inside the media folder
+!media/*.png
+!media/*.jpg
+```
+
