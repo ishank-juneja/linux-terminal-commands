@@ -1,5 +1,31 @@
+Change in credentials since GitHub has stopped supporting login passwords for command line usage (because the password method is to be depracated soon.) 
+
+Step 1: Run the below command to remove any existing stored credentials (this can be either the original GitHub account credentials or an unknown personal access token that was generated earlier using GitHub's website.)
+
+`git config --global --system --unset credential.helper`
+
+Step 2: After running the above the system will be purged of any prior credentials and we can now overwrite them by first running
+
+`git config --global credential.helper store`
+
+Step 3: Attempt a git push, your GitHub username and new password (personal access token) will need to be entered either after step 2 or 3 but thereafter it will be remembered in the system.
+
+`git add -A && git commit -m "dummy commit" && git push`
+  
+Note: For some reason, we might need to unlink with remote and then link it back again while keeping the reference to the remote URL as an HTTPS:
+
+`git remote -v`
+
+`git remote remove origin`
+
+`git remote add origin https://github.com/ishank-juneja/repo-name.git`
+
+` git push --set-upstream origin master`
+
+
 Save GH password
 	- Which needs to be followed by one final entry of GH credentials.
+	- Maybe add --global flag to this
 
 `git config credential.helper store`
 	
