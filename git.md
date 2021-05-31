@@ -22,6 +22,9 @@ Note: For some reason, we might need to unlink with remote and then link it back
 
 ` git push --set-upstream origin master`
 
+Might be needed-
+
+`git branch --set-upstream-to=origin/master master`
 
 Save GH password
 	- Which needs to be followed by one final entry of GH credentials.
