@@ -1,3 +1,7 @@
+Remove last git commit
+
+`git reset --soft HEAD~1`
+
 Change in credentials since GitHub has stopped supporting login passwords for command line usage (because the password method is to be depracated soon.) 
 
 Step 1: Run the below command to remove any existing stored credentials (this can be either the original GitHub account credentials or an unknown personal access token that was generated earlier using GitHub's website.)
