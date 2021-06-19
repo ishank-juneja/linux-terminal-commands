@@ -137,3 +137,8 @@ In a `.gitignore` file if we wish to exclude all files of type `.png` and `.jpg`
 !media/*.jpg
 ```
 The sequence of commands in the above is important
+	
+To cleanup a git repository that has been bloated by accidentally commiting graphics, binaries, raw-data etc using `bfg` tool, first follow the instructions given on [this link](https://www.phase2technology.com/blog/removing-large-files-git-bfg). Once the re-indexed commits have been pushed the remote will now contain the same number of commits as before but these commits are "reindexed" meaning that they are no longer recognizable to any old local folder. Now to commit any changes that were made to local after the last commit to the old bloated remote please copy these files to the new local manually and then commit-push the changes.
+	
+Any untracked data present in the old local can be moved to the new local manually as well so that the old local can then be deleted.
+
