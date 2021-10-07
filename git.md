@@ -4,7 +4,9 @@ Remove last git commit
 
 Change in credentials since GitHub has stopped supporting login passwords for command line usage (because the password method is to be depracated soon.) 
 
-Step 1: Run the below command to remove any existing stored credentials (this can be either the original GitHub account credentials or an unknown personal access token that was generated earlier using GitHub's website.)
+Step 1: Run the below command to remove any existing stored credentials (this can be either the original GitHub account credentials or an unknown personal access token that was generated earlier using GitHub's website.) 
+
+Note: with new personal-token stuff, username remains the same but password is replaced by a personal token
 
 `git config --global --system --unset credential.helper`
 
