@@ -18,6 +18,6 @@ Backwards
 
 <kbd>ctrl</kbd> + <kbd>F4</kbd>
 
-- Cloning a conda environment
+- Cloning a conda environment (Use this in pycharm when any conda environement is currently activated)
 
 `conda create --clone <existing enviroment> -n <new environment>`
