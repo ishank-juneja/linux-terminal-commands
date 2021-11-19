@@ -17,3 +17,7 @@ Backwards
 - Close active tab
 
 <kbd>ctrl</kbd> + <kbd>F4</kbd>
+
+- Cloning a conda environment
+
+`conda create --clone <existing enviroment> -n <new environment>`
