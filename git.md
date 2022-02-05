@@ -122,6 +122,9 @@ To fetch a new remote branch into a new local branch of the same name
 
 `git checkout --track origin/<name at remote>`
 
+To clone a certain branch of a remote git repo
+`git clone --branch <branchname> <remote-repo-url>`
+	
 To create a new local git rep that tracks a remote repo on GH say
 
 `git clone https://github.com/ishank-juneja/pipelined-RISC`
