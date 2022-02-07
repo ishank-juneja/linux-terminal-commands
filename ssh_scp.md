@@ -16,3 +16,7 @@ scp can be used to transfer files between PCs using the same ssh address
 When you have an scp config alias saved (here armada)
 
 `scp models/CNN/model_ball_Feb05_12-46-00.pt armada:MM-LVSPC/models/CNN`
+
+When you want to send a file from remote to local 
+
+`scp armada:MM-LVSPC/models/CNN/model_conkers_Feb06_22-40-04.pt Desktop/MM-LVSPC/models/CNN/`
