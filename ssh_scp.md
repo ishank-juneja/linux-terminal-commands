@@ -20,3 +20,11 @@ When you have an scp config alias saved (here armada)
 When you want to send a file from remote to local 
 
 `scp armada:MM-LVSPC/models/CNN/model_conkers_Feb06_22-40-04.pt Desktop/MM-LVSPC/models/CNN/`
+
+If trying to transfer a whole folder of something like photos, npy files etc.
+
+1. Convert to tarball using [link](https://github.com/ishank-juneja/linux-terminal-commands/blob/master/tarball.md)
+2. Then SCP thing
+3. Advantages: Can mess around in the folder in local after starting a somewhat long scp, and even disregarding the compressions provided by zipping the folder (which is significant and upto 2 orders of magnitude at times) transferring a single object is a lot faster than sending a collection of objects.
+
+
