@@ -14,3 +14,7 @@ cmd to download files of a certain type from a website by traversing all links r
 cmd to count the total number of files in a directory
 
 `ls -l . | egrep -c '^-'`
+
+cmd to install a `.deb` file
+
+`sudo dpkg -i path_to_deb_file`
